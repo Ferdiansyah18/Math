@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/feather-icons"></script>
+    
+    <!-- Style -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Start -->
+    
+    <div class="header-container">
+        <div class="header-title">
+            <h1>Math?</h1>
+        </div>
+        <div class="header-menu">
+            <button class="menu-btn" onclick="menuBtn()">
+                <i class="ham-btn" data-feather="menu"></i>
+            </button>
+        </div>
+        <div class="menu-list">
+            <a href="#keliling-pg">Keliling Persegi</a>
+            <a href="#luas-pg">Luas Persegi</a>
+        </div>
+    </div>
+
+    <div class="menu-container" id="menu">
+        <button class="close-btn" onclick="menuCloseBtn()">
+            <i data-feather="x"></i>
+        </button>
+        <div class="menu-items">
+            <a href="#keliling-pg">Keliling Persegi</a>
+            <a href="#luas-pg">Luas Persegi</a>
+        </div>
+    </div>
+
+    <!-- Header End -->
+
+    <!-- Hero Start -->
+
+    <div class="hero-container">
+        <div class="hero-text">
+            <div class="hero-title">
+                <h2>Welcome</h2>
+            </div>
+            <div class="hero-para">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut dolorem earum sequi repellat sint reprehenderit vitae voluptatibus nihil repudiandae possimus?
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="//external-content.duckduckgo.com/iu/?u=https%3A%2F%2Feimaths.com%2Fwp-content%2Fuploads%2F2021%2F11%2Fmath-vector-image-1.png&f=1&nofb=1&ipt=42dcff2b7a6209773f59c56070f91687cdb7ce17168875704f1865fb8824b7da&ipo=images" alt="">
+        </div>
+    </div>
+
+    <div class="start-container">
+        <a href="#keliling-pg" class="start-button">Let's Get Started</a>
+        <i class="arrow-down" data-feather="arrow-down"></i>
+    </div>
+
+    <div class="main-content-container">
+        <div class="main-content-wrapper">
+            <div class="main-keliling-wrapper" id="keliling-pg">
+                <div class="keliling-title">
+                    <h2>Keliling Persegi</h2>
+                </div>
+                <div class="keliling-main">
+                    <input type="number" id="keliling" placeholder="Masukkan angka">
+                    <button class="submit-btn" onclick="kelilingSubmit()">Hitung</button>
+                </div>
+            </div>
+            <div class="main-luas-wrapper" id="luas-pg">
+                <div class="luas-title">
+                    <h2>Luas Persegi</h2>
+                </div>
+                <div class="luas-main">
+                    <input type="number" id="luas" placeholder="Masukkan angka">
+                    <button class="submit-btn" onclick="luasSubmit()">Hitung</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero End -->
+
+    <!-- Footer Start -->
+
+    <div class="footer-container"></div>
+
+    <!-- Footer End -->
+
+    <!-- Script -->
+    <script src="main.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script>
+        feather.replace();
+      </script>
+    
+</body>
+</html>
